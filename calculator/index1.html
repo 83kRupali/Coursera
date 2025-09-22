@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rupali Ramteke | Portfolio</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+  <!-- 🔹 Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <img src="home.webp" alt="Home" class="home-icon">
+      Rupali Ramteke
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Project details</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#recommendations">Recommendations</a></li>
+    </ul>
+  </nav>
+
+  <!-- 🔹 Hero Section -->
+  <section class="hero">
+    <img src="profile1.jpg" alt="Profile" class="profile-img">
+    <h1>Hi, I'm <span>Rupali Ramteke</span></h1>
+    <p>Aspiring Full-Stack Developer | Problem Solver | Lifelong Learner</p>
+  </section>
+
+  <!-- 🔹 About -->
+  <section id="about" class="section fade-in">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate <b>Full-Stack Developer</b> skilled in React.js, Node.js, Express.js, and MongoDB.
+      I love creating projects that solve real-world challenges and provide engaging user experiences.
+    </p>
+  </section>
+
+  <!-- 🔹 Projects -->
+  <section id="projects" class="section fade-in">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="card hover-card">
+        <h3>📌 Bank Management System</h3>
+        <p>Java + Swing + MySQL</p>
+      </div>
+      <div class="card hover-card">
+        <h3>📌 Tracker – Employee Management</h3>
+        <p>React + Node.js + MongoDB</p>
+      </div>
+      <div class="card hover-card">
+        <h3>📌 WanderLust – Airbnb Clone</h3>
+        <p>HTML + CSS + JS + Node.js</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 🔹 Skills -->
+  <section id="skills" class="section fade-in">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill"><img src="java.png" alt="Java"><p>Java</p></div>
+      <div class="skill"><img src="python.webp" alt="Python"><p>Python</p></div>
+      <div class="skill"><img src="react.webp" alt="React"><p>React.js</p></div>
+      <div class="skill"><img src="node.png" alt="Node"><p>Node.js</p></div>
+      <div class="skill"><img src="mongo.webp" alt="MongoDB"><p>MongoDB</p></div>
+    </div>
+  </section>
+
+  <!-- 🔹 Recommendations -->
+  <section id="recommendations" class="section fade-in">
+    <h2>Recommendations</h2>
+    <ul id="recommendation-list">
+      <li>“Rupali is a highly dedicated developer who always delivers quality code.”</li>
+      <li>“She has strong problem-solving skills and works well in teams.”</li>
+      <li>“Her ability to learn and adapt to new technologies is impressive.”</li>
+    </ul>
+
+    <textarea id="new-recommendation" placeholder="Write a recommendation..."></textarea>
+    <button onclick="addRecommendation()">Submit</button>
+  </section>
+
+  <!-- Popup -->
+  <div id="popup" class="popup">
+    <p>✅ Thank you for leaving a recommendation!</p>
+    <button onclick="closePopup()">OK</button>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
